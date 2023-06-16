@@ -1,8 +1,11 @@
-import { BUG_ADDED, BUG_REMOVED } from "./actionTypes";
+import { BUG_ADDED, BUG_REMOVED, BUG_RESOLVED } from "./actionTypes";
 
 export const bugAdded=(description)=> ({
- type: BUG_ADDED, payload: { description: "Bug 1" }
+ type: BUG_ADDED, payload: { description }
 })
 export function bugRemoved(id) {
-  return { type: BUG_REMOVED, payload: { id: 1 } };
+  return { type: BUG_REMOVED, payload: { id } };
 }
+export const bugResolved =(id)=>({
+type:BUG_RESOLVED, payload:{id}
+})
