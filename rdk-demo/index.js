@@ -5,7 +5,7 @@ const iceCreamActions = require("./features/iceCream/iceCreamSlice").iceCreamAct
 
 console.log("Initial state", store.getState())
 const unsubscribe= store.subscribe(()=>{
-    console.log("Updated State", store.getState())
+    // console.log("Updated State", store.getState())
 })
 store.dispatch(cakeActions.ordered())
 store.dispatch(cakeActions.restocked(10))
