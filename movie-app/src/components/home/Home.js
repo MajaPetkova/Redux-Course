@@ -2,7 +2,7 @@ import { MovieListing } from "../movieListing/MovieListing";
 import { useEffect } from "react";
 
 import { useDispatch } from "react-redux";
-import { addMovies, fetchAsyncMovies } from "../../features/movies/movieSlice";
+import { addMovies, fetchAsyncMovies, fetchAsyncShows } from "../../features/movies/movieSlice";
 
 export const Home = () => {
 
@@ -19,6 +19,7 @@ export const Home = () => {
     // };
     // fetchMovies();
     dispatch(fetchAsyncMovies())
+    dispatch(fetchAsyncShows())
   }, [dispatch]);
   return (
     <div>
