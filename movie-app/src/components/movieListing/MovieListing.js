@@ -6,7 +6,7 @@ import "./movieListing.scss";
 
 export const MovieListing = () => {
   const movies = useSelector(getAllMovies);
-  console.log(movies)
+  // console.log(movies)
   let renderMovies = "";
 
   renderMovies =
